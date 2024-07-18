@@ -1,2 +1,2 @@
 "use strict";
-const urlData = 'https://jsonplaceholder.typicode.com/posts';
+Object.defineProperty(exports, "__esModule", { value: true });
