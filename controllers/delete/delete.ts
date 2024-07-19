@@ -1,4 +1,4 @@
-import { BodyResponse } from "../../models/body.models";
+import { BodyResponse } from "../../models/body.models.js";
 
 const url_api: string = 'https://jsonplaceholder.typicode.com/posts'
 

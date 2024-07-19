@@ -1,6 +1,6 @@
-import { BodyResponse } from "../../models/body.models";
+import { BodyResponse } from "../../models/body.models.js";
 
-const url_api: string = 'https://jsonplaceholder.typicode.com/posts'
+//const url_api: string = 'https://jsonplaceholder.typicode.com/posts'
 
 // fetch(url_api)
 //  .then((response) => response.json())
@@ -8,6 +8,7 @@ const url_api: string = 'https://jsonplaceholder.typicode.com/posts'
 
 export class Consult {
     constructor( private url_api: string ) { 
+        this.url_api
 
     }
 
@@ -23,7 +24,7 @@ export class Consult {
         }
 
         const result: Response = await fetch(url_api, reqOptions);
-        console.log(result);
+      
     }
 }
 

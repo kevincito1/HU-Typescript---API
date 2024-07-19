@@ -10,13 +10,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Consult = void 0;
-const url_api = 'https://jsonplaceholder.typicode.com/posts';
+//const url_api: string = 'https://jsonplaceholder.typicode.com/posts'
 // fetch(url_api)
 //  .then((response) => response.json())
 //  .then((data)=> console.log(data))
 class Consult {
     constructor(url_api) {
         this.url_api = url_api;
+        this.url_api;
     }
     consultData(data) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -29,7 +30,6 @@ class Consult {
                 body: JSON.stringify(data),
             };
             const result = yield fetch(url_api, reqOptions);
-            console.log(result);
         });
     }
 }
